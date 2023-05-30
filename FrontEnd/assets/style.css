@@ -88,11 +88,19 @@ nav ul {
 	display: flex;
 	align-items: center;
 	list-style-type: none;
+	cursor: pointer;
 
 }
 nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+}
+nav a:hover {
+	color: #B1663C;
 }
 
 li:hover {
@@ -185,4 +193,25 @@ footer nav ul {
 	justify-content: flex-end;
 	margin: 2em
 }
-
+.projects {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 42px;
+	margin-top: 40px;
+}
+.projects li {
+	font-size: 16px;
+	color: #1D6154;
+	font-weight: 700;
+	font-family: 'Syne', sans-serif;
+	border: #1D6154 solid 2px;
+	border-radius: 60px;
+	padding: 9px 30px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.projects li:hover {
+	background: #1D6154;
+	color: white;
+}
