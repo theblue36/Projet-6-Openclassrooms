@@ -63,16 +63,39 @@ body {
 	display: flex;
 	list-style-type: none;
 	width: 100%;
+	background-color: black;
 }
 .jsnav ul {
 	width: 100%;
 }
-.jsnav li {
+.jsnav i {
+	margin-right: 10px;
+}
+.jsnav li:first-child {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	align-items: center;
+	color: white;
+}
+.jsnav li:last-child {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
+}
+.jsnav a:last-child {
+	color: white;
+}
+.jsnav a:first-child {
+	color: black;
+	background-color: white;
+	padding: 10px;
+	border: 1px white solid;
+    border-radius: 20px;
+
 }
 .header_1 {
 	display: flex;
