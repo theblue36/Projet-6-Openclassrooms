@@ -61,8 +61,25 @@ function displayFigureWorks(dataWorks) {
             </figure>`
     }).join(' ');
 }
-
+const check = async()=>{ 
+    if (localStorage.getItem('accessToken'))
+     {
+        const login = document.querySelector('.login')
+        const headerPort = document.querySelector('.header_port')
+        const modifyButtons = document.querySelectorAll('.js_2')
+        const jsspawn = document.querySelector('.jsspawn')
+        modifyButtons.forEach((button)=>{
+            button.style.display = 'block'
+        })
+        jsspawn.style.display = 'flex'
+        login.innerHTML = '<a href="">logout</a>'
+        login.addEventListener('click', ()=>{
+            localStorage.removeItem('accessToken')
+        })
+     }
+}
 window.addEventListener('DOMContentLoaded', async () => {
+    await check();
     await getCategories();
     await getWorks();
     await filterWorks();

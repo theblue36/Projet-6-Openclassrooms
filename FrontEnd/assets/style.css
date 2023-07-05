@@ -53,17 +53,38 @@ body {
 	font-family: 'Work Sans' ;
 	font-size: 14px;
 }
+.modal_1 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	top: 0;
+	left: 0;
+}
+.modal_1_content {
+	width: 50%;
+	border-radius: 25px;
+	background-color: #fefefe;
+	padding: 10px;
+	border: 1px solid black;
+	position: relative;
+	top: 20%;
+	margin: 0 auto;
+}
 .jsspawn {
 	width: 100%;
-	display: flex;
 	justify-content: space-between;
 	height: 60px;
+	display: none;
 }
 .jsnav  {
 	display: flex;
 	list-style-type: none;
 	width: 100%;
 	background-color: black;
+}
+.js_2 {
+	display: none;
 }
 .jsnav ul {
 	width: 100%;
